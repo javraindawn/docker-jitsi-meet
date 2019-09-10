@@ -17,17 +17,18 @@ services:
             - ENABLE_LETSENCRYPT
             - ENABLE_HTTP_REDIRECT
             - ENABLE_TRANSCRIPTIONS
+            - ETHERPAD_URL_BASE
             - DISABLE_HTTPS
             - JICOFO_AUTH_USER
             - LETSENCRYPT_DOMAIN
             - LETSENCRYPT_EMAIL
             - PUBLIC_URL
+            - SPOT_URL_BASE
             - XMPP_DOMAIN
             - XMPP_AUTH_DOMAIN
             - XMPP_BOSH_URL_BASE
             - XMPP_GUEST_DOMAIN
             - XMPP_MUC_DOMAIN
-            - ETHERPAD_URL_BASE
             - TZ
         networks:
             meet.jitsi:
