@@ -26,7 +26,7 @@ push:
 	docker push $(JITSI_REPO)/$(JITSI_SERVICE):$(JITSI_BUILD)
 
 %-all:
-	@$(foreach SERVICE, $(JITSI_SERVICES), $(MAKE) --no-print-directory JITSI_SERVICE=$(SERVICE) $(subst -all,;,$@))
+	@$(foreach SERVICE, $(CUSTOM_JITSI_SERVICES), $(MAKE) --no-print-directory JITSI_SERVICE=$(SERVICE) $(subst -all,;,$@))
 
 clean:
 	docker-compose stop
